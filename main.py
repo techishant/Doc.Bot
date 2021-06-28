@@ -1,6 +1,8 @@
-what_to_do = input("Do you want me to type numbers or type words? ")
+# Check What User Wants (upper is used to string because if user types i  lower case or uppercase both should be rectified)
+what_to_do = input('Do you want me to type numbers or type words? ("N" for Number | "W" for Words) ').upper()
 
-if what_to_do == "type numbers":
+# If user want Numbers 
+if what_to_do == "N":
  print('Enter file name')
  filename = str(input())
 
@@ -24,9 +26,9 @@ if what_to_do == "type numbers":
             f.write(str(i+1) + '\n')
         f.close()
         
+    # if users wants Words
 else :
-    #starting the type words
-    if what_to_do == "type words" :
+    if what_to_do == "W" :
         print('Enter file name')
         filename = str(input())
 
